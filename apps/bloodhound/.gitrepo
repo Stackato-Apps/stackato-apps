@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/bloodhound
+	branch = stackato-v3
+	commit = 06b456bdcd51a59a9c455e9f8def396eb4f652f0
+	parent = d6c59eabb8bd45e07c2c4095d4cca0a3eba3dd38
+	cmdver = 0.2.0
