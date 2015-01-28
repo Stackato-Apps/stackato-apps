@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+
+# This script subrepo clones all the apps listed in the `stackato-app-test`
+# repo.
+
+set -e
+
+conf_file=../stackato-app-test/conf/apps.ini
+taglist=(
+  BSD
+  EPL
+  GPL
+  MIT
+  MPL
+
+  buildpack
+  filesystem
+  generic
+  harbor
+  memcached
+  mongodb
+  mysql
+  rabbitmq
+  rails
+  redis
+
+  java
+  java6
+  node
+  perl
+  php
+  python
+  ruby
+)
+
+tag_regex="$(IFS='|'; echo "(${taglist[*]})")"
+
+all_apps=($(
+  git config -f $conf_file --list |
+  grep 'app' |
+  cut -d. -f2 |
+  sort | uniq
+))
+
+is-fail() {
+  [ -n "$(git config -f $conf_file --get app.$app.tag FAIL)" ]
+}
+
+max=2
+i=0
+for app in ${all_apps[*]}; do
+  if is-fail; then
+    echo *** App $app is current known to FAIL
+    continue
+  fi
+  remote="$(git config -f $conf_file --get app.$app.remote)"
+  branch="$(git config -f $conf_file --get app.$app.branch)"
+  if [ ! -e apps/$app ]; then
+    echo o Cloning new subrepo: $remote into apps/$app
+    (
+      set -x
+      git subrepo clone $remote apps/$app -b $branch &> /dev/null
+    )
+  fi
+  # : $((i++)); [ $i -ge $max ] && break
+done
+
+i=0
+for app in ${all_apps[*]}; do
+  is-fail && continue
+  for tag in $(git config -f $conf_file --get-all app.$app.tag); do
+    [[ $tag =~ $tag_regex ]] || continue
+    tag="${BASH_REMATCH[0]}"
+    [[ ! -e tags/$tag/$app ]] || continue
+    echo o Making symlink: tags/$tag → apps/$app
+    mkdir -p tags/$tag
+    (
+      cd tags/$tag
+      ln -s ../../apps/$app
+    )
+  done
+  # : $((i++)); [ $i -ge $max ] && break
+done
+git add tag &> /dev/null
+git commit tag -m "Adding tag symlinks" &> /dev/null
+
+# vim: set ft=sh:
