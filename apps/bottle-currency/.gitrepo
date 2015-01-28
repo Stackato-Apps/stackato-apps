@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/bottle-currency
+	branch = master
+	commit = a2542e826a009392991a0c9159b3801a6767140b
+	parent = b2728898c0b8ad90647faaebe2a9b2cb70c54ff6
+	cmdver = 0.2.0
