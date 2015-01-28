@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/cakephp
+	branch = stackato
+	commit = de03c9ff6756d41833e678f6385ea5e12d88f4e8
+	parent = 879ffd092811c03542b8b3b162ee0ec4bbd4dd8f
+	cmdver = 0.2.0
