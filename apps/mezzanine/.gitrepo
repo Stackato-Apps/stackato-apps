@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/mezzanine
+	branch = stackato
+	commit = 2fd5ceb33a7afaed1417a545f5812a45e68da915
+	parent = e08e8aff8a132159b966ecd236f55caba2c988a6
+	cmdver = 0.2.0
