@@ -27,7 +27,7 @@ If you are an Activator, to update this repo to all the latest app versions:
       . $PWD/git-subrepo/init
 
       cd stackato-apps
-      git subrepo update --all
+      git subrepo pull --all
       git push
 
 =cut
