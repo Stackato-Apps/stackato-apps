@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/drupal
+	branch = commerce
+	commit = 8dee8d5931152372a7ded6abd89da0d0d1a69aeb
+	parent = 18575d1fac81f5208502d8b74e17ceeee4c9325e
+	cmdver = 0.2.0
