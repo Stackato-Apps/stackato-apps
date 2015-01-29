@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+DIRC=`echo "$0" | sed -e 's/\\\\/\\//g'`
+DIR=`dirname "$DIRC"`
+if [ -f "${DIR}/../lib/calipso-cli.js" ]
+then
+# This is when the calipso source is the current directory
+  NODE_PATH="${DIR}/.." exec node "${DIR}/../lib/calipso-cli.js" $*
+else
+# This is when calipso is installed with npm install -g
+  NODE_PATH="${DIR}/.." exec node "${DIR}/../lib/node_modules/calipso/lib/calipso-cli.js" $*
+fi

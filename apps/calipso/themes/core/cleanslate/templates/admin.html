@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "utf-8">
+	<meta name = "description" content = "put your site description here">
+	<meta name = "keywords" content = "put your site keywords here">
+	<title>Clean Slate</title>
+
+	<link rel = "stylesheet" href = "/css/admin.css"/>
+
+	<%- scripts %>
+
+</head>
+<body>
+<nav class = "adminMenu row extended-height">
+	<%- admin %>
+</nav>
+<div class = "container">
+	<header class = "row extended-height">
+		<%- header %>
+		<nav class = "adminToolbar">
+			<%- getMenu('adminToolbar') %>
+		</nav>
+	</header>
+
+	<aside id = "messages" class = "row">
+		<%- messages %>
+	</aside>
+
+	<article class = "admin-body row">
+		<!--PAGE_BODY_START-->
+		<%- body %>
+		<!--PAGE_BODY_END-->
+	</article>
+	<footer class = "row">
+		<%- footer %>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/calipso
+	branch = stackato
+	commit = d54fb672aa6ebea7e0236c0d99094bf93a186b70
+	parent = 281180cc40f4c3a7cf12e70c88c3d8875f2f1490
+	cmdver = 0.2.0
