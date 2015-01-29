@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/joomla-cms
+	branch = stackato
+	commit = 777e49c4f10bf5e20abc42031affb2e6c11af256
+	parent = 5b2ab8ff91bd10aa12799802dd13239eaa56d950
+	cmdver = 0.2.0
