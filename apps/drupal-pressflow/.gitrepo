@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/drupal-pressflow
+	branch = stackato
+	commit = 040330bb404e7fdc5dd38b2cdc8274f4c6c5d76f
+	parent = 136871e140ae415ae05d7731c0691f3afbeaecea
+	cmdver = 0.2.0
