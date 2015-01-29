@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/node-env
+	branch = master
+	commit = 4413a9d9bf0c2c5f60fdec8e559dcf892668e61b
+	parent = bf32a98fbdd2fdf3d99dc7868b1aa1ae83192863
+	cmdver = 0.2.0
