@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/haste-server
+	branch = stackato
+	commit = ede4052ddb06a0af324b1ef32282a542783aad4e
+	parent = 158fa5b38df9d1ef6905b4d49f4526372270006f
+	cmdver = 0.2.0
