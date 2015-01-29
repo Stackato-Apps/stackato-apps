@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/rails-movie
+	branch = master
+	commit = c4bf9e14caf2782e58c070c72f028d6be6c19876
+	parent = c8014eb471866e86fa10b3b75f0d350cb450c249
+	cmdver = 0.2.0
