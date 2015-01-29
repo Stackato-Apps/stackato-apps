@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/perlcritic.com
+	branch = stackato
+	commit = 10845e97a8826646787fe8ed5e9b873bead09b67
+	parent = e632ed24da7dc4f97ee5b4c39f446fa433438d09
+	cmdver = 0.2.0
