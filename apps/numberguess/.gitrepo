@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/Numberguess
+	branch = master
+	commit = 8e96aa24bd2f1be88240694715921215d06ca1ba
+	parent = c8cdd739466fe24d4b0280211e71b4320f49b013
+	cmdver = 0.2.0
