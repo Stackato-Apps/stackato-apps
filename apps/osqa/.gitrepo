@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/osqa
+	branch = stackato
+	commit = 0916efd49e2347b46fc4d0213a9744104206c22e
+	parent = f965758a45b732841db60c02c313a765c2b9a795
+	cmdver = 0.2.0
