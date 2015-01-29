@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/node-backbone-mongo
+	branch = master
+	commit = 6b39d539599ffaf0d64bf2cd3150c58728fc25a6
+	parent = 4177a0e6d04d10e24fc49c563119be2546ff69a2
+	cmdver = 0.2.0
