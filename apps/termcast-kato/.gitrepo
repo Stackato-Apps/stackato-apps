@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/termcast-kato
+	branch = stackato
+	commit = 22e2c6724fa3ddcd5019768c7f91f2c505c0db5b
+	parent = a30aec898ae2a71a0121c4f9038a71532f767b61
+	cmdver = 0.2.0

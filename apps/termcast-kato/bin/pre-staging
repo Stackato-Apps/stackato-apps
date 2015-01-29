@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+git clone --branch stackato https://github.com/ingydotnet/app-termcast-server
+git clone --branch stackato https://github.com/ingydotnet/node-termcast-server
+
+cat <<... > bin/termcast
+#!/bin/bash
+
+PERL5LIB=~/app-termcast-server/cpan/lib perl ~/app-termcast-server/cpan/bin/termcast $@
+...
