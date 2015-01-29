@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/nide
+	branch = master
+	commit = 06a07bce8d8ca29faaa9f8365f239d5d8d70d3e2
+	parent = 7e904bdec2478ad9b97525fc5f0cb161ea630ce5
+	cmdver = 0.2.0
