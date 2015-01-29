@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/wordpress
+	branch = stackato-v3
+	commit = 75d143c0cf119737e24d8c44756da581b8442fb2
+	parent = 7f296ddaace4d3ce3eb167e320a28c13537a49ee
+	cmdver = 0.2.0
