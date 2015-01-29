@@ -18,4 +18,16 @@ the various Stackato-Apps repositories.
 
 There are also tagging symlink directories like C<tags/java>.
 
+=head2 Updating this Repo
+
+To update this repo to all the latest app versions:
+
+      # If you don't have git-subrepo
+      git clone https://github.com/ingydotnet/git-subrepo
+      . $PWD/git-subrepo/init
+
+      cd stackato-apps
+      git subrepo update --all
+      git push
+
 =cut

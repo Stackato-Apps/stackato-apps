@@ -10,3 +10,15 @@ The apps are all under the `apps/` directory and they are subrepo clones of the
 various Stackato-Apps repositories.
 
 There are also tagging symlink directories like `tags/java`.
+
+== Updating this Repo
+
+If you are an Activator, to update this repo to all the latest app versions:
+
+    # If you don't have git-subrepo:
+    git clone https://github.com/ingydotnet/git-subrepo
+    . $PWD/git-subrepo/init
+
+    cd stackato-apps
+    git subrepo update --all
+    git push
