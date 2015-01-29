@@ -1,0 +1,5 @@
+mysql-python
+django==1.4
+south
+python-memcached
+gunicorn

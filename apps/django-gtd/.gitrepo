@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/django-gtd
+	branch = cfv2
+	commit = 245cd6f256838ef078191f9af10179d25ca64813
+	parent = 15130290e6cd236e4d325ec64734077e8f204731
+	cmdver = 0.2.0
