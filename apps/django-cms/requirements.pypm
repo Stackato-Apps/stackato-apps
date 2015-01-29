@@ -1,0 +1,6 @@
+django-cms==2.3.6
+django
+south
+pil
+psycopg2
+six
