@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/phpinfo
+	branch = legacy
+	commit = 07cb40494003968a5f7a904889a05b88262507d3
+	parent = 8ff24b3dc5bceef05c358740c357390249153890
+	cmdver = 0.2.0
