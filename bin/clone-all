@@ -7,30 +7,12 @@ set -e
 
 conf_file=../stackato-app-test/conf/apps.ini
 taglist=(
-  BSD
-  EPL
-  GPL
-  MIT
-  MPL
+  BSD EPL GPL MIT MPL
 
-  buildpack
-  filesystem
-  generic
-  harbor
-  memcached
-  mongodb
-  mysql
-  rabbitmq
-  rails
-  redis
+  buildpack filesystem generic harbor memcached
+  mongodb mysql rabbitmq rails redis
 
-  java
-  java6
-  node
-  perl
-  php
-  python
-  ruby
+  java java6 node perl php python ruby
 )
 
 tag_regex="$(IFS='|'; echo "(${taglist[*]})")"
@@ -46,8 +28,6 @@ is-fail() {
   [ -n "$(git config -f $conf_file --get app.$app.tag FAIL)" ]
 }
 
-max=2
-i=0
 for app in ${all_apps[*]}; do
   if is-fail; then
     echo *** App $app is current known to FAIL
@@ -62,7 +42,6 @@ for app in ${all_apps[*]}; do
       git subrepo clone $remote apps/$app -b $branch &> /dev/null
     )
   fi
-  # : $((i++)); [ $i -ge $max ] && break
 done
 
 i=0
@@ -79,7 +58,6 @@ for app in ${all_apps[*]}; do
       ln -s ../../apps/$app
     )
   done
-  # : $((i++)); [ $i -ge $max ] && break
 done
 git add tag &> /dev/null
 git commit tag -m "Adding tag symlinks" &> /dev/null
