@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/HTML5-Zombocom
+	branch = master
+	commit = 86f7733ced00ad0dffb8255c6c2fbb0c9ce43db5
+	parent = 369df77d77fc3aef7c384ded03de7daabdf7cf70
+	cmdver = 0.2.0
