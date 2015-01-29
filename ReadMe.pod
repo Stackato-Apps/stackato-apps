@@ -16,6 +16,6 @@ clone with this command:
 The apps are all under the C<apps/> directory and they are subrepo clones of
 the various Stackato-Apps repositories.
 
-There are also tagging symlink directories like C<lang/java>.
+There are also tagging symlink directories like C<tags/java>.
 
 =cut
