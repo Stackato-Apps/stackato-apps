@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/photobooth
+	branch = stackato
+	commit = e40496b552408cad516aaaf361306604d9bb5738
+	parent = 319d2f40ebe34546b129b3b18a5e3c29d6ed5185
+	cmdver = 0.2.0

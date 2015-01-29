@@ -1,0 +1,1 @@
+* * * * * find $HOME/public/pic -name *.jpg -mmin +3 -delete
