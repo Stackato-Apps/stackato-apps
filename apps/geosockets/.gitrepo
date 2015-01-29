@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/geosockets
+	branch = master
+	commit = 1ea9ad8bf6be37a74d2fc45847b5391c7340cceb
+	parent = 8420451dc5501741afd705df9de0856f567759cc
+	cmdver = 0.2.0
