@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/go-env
+	branch = master
+	commit = 6403ca7373f2b25f210b59edb47bbf11d5a6bfd5
+	parent = 1ebec1a27d0844ed40e4f12482cdaa54aa0cdc56
+	cmdver = 0.2.0
