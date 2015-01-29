@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Jenkins-Version: 1.588
+Implementation-Version: 1.588
+Built-By: williamg
+Build-Jdk: 1.7.0_65
+Hudson-Version: 1.395
+Created-By: Apache Maven 3.0.5
+Archiver-Version: Plexus Archiver
+

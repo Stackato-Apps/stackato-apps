@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:Stackato-Apps/jenkins
+	branch = stackato-v3
+	commit = e4cd82d5bd9afad2f9d4548582de7fc1ffc2ec0c
+	parent = 26e195718258e16f501a95da689f33dcdb606995
+	cmdver = 0.2.0
