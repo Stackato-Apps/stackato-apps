@@ -4,7 +4,7 @@ stackato-apps
 This repo contains all the latest Stackato Apps in one repository that you can
 clone with this command:
 
-  git clone https://github.com/Stackato-Aapps/stackato-apps/
+  git clone https://github.com/Stackato-Apps/stackato-apps/
 
 The apps are all under the `apps/` directory and they are subrepo clones of the
 various Stackato-Apps repositories.
