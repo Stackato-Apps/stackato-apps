@@ -1,0 +1,5 @@
+{
+    "WEBDIR": ".",
+    "WEB_SERVER": "nginx",
+    "PHP_EXTENSIONS": ["mysql", "zlib"]
+}
